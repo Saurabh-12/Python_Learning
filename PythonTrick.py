@@ -8,7 +8,7 @@ print(a,b)
 my_string_list = ["Python", "is", "awesome"]
 print(" ".join(my_string_list))
 
-# 3. Reverse the String
+# 3. Reverse the String using slicing
 singeString = " ".join(my_string_list)
 print(singeString[::-1])
 
@@ -186,10 +186,74 @@ names = ["Hard Disk", "Laptop", "RAM"]
 itemDictionary = dict(zip(ItemId, names))
 print(itemDictionary)
 
+# 26. convert a string to title case.
+my_string = "my name is Saurabh Sharma"
+# using the title() function of string class
+new_string = my_string.title()
+print(new_string)
 
+# 27. find all the unique elements in a strin
+my_string = "aavvccccddddeee"
 
+# converting the string to a set
+temp_set = set(my_string)
 
+# stitching set into a string using join
+new_string = ''.join(temp_set)
+print(new_string)
 
+# 28. creating lists based on other lists.
+original_list = [1,2,3,4]
+new_list = [2*x for x in original_list]
+print(new_list)
 
+# 29. Split a string
+string_1 = "My name is Saurabh Sharma"
+string_2 = "sample/ string 2"
+# default separator ' '
+print(string_1.split())
+# defining separator as '/'
+print(string_2.split('/'))
 
+# 30. Error handling in Python using the try/except block
+a, b = 1,0
+try:
+    print(a/b)
+    # exception raised when b is 0
+except ZeroDivisionError:
+    print("division by zero")
+else:
+    print("no exceptions raised")
+finally:
+    print("Run this always")
+
+# 31. Enumerate to Get Index/Value Pairs
+my_list = ['a', 'b', 'c', 'd', 'e']
+for index, value in enumerate(my_list):
+    print('{0}: {1}'.format(index, value))
+
+# 32. convert an integer into a list of digits
+num = 123456
+list_of_digits = list(map(int, str(num)))
+print(list_of_digits)
+
+#33. Calculate the factorial of any number in one line.
+import functools
+result = (lambda k: functools.reduce(int.__mul__, range(1,k+1),1))(5)
+print(result)
+
+# 34. Four ways to reverse string/list.
+   # A. Reverse the list itself.
+testList = [1, 3, 5]
+testList.reverse()
+print(testList)
+  # B. Reverse while iterating in a loop.
+for element in reversed([1,3,5]): 
+    print(element)
+  # C. Reverse a string in line.
+print("Test Python"[::-1])
+  # D. Reverse a list using slicing.
+print([1, 3, 5][::-1])
+
+# 35. 
 
