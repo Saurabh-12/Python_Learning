@@ -255,5 +255,23 @@ print("Test Python"[::-1])
   # D. Reverse a list using slicing.
 print([1, 3, 5][::-1])
 
-# 35. 
+# 35. Mutable and Immutable
+# Mutable objects can be changed whereas immutable objects are frozen after instantiation
+# List in python mutable
+my_list = [1, 2, 3]
+my_list[2] = 5
+print(my_list)
+# String is Immutable. strings couldn’t be used as keys in dictionaries if they were mutable. 
+# Immutable types give you the guarantee that modifications to the underlying object are not permissible
+String1 = "Saurabh"
+# String1[2] = "K"  # It gives error
+
+# 36. Arguments passed to functions 
+# Python functions are Call-By-Object-Reference, meaning the mutability of the object affects the function’s behavior.
+#  Types that are immutable are passed by value and don’t make any changes to the underlying object.
+#  Mutable objects are passed by reference so the modification of the underlying object is possible.
+
+
+
+
 
