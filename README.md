@@ -26,3 +26,7 @@ I have created below example file to show class and object usages in python.
 - Mutable_Immutable_Object_In_Python.py
 - Python_Inner_Class.py
 - Passing_Members_Of_One_Class_to_Other.py
+# 5. Top 10 mistake in Python
+Some example code to show common mistake in python.
+- Top_10_Mistake_In_Python_Program.py
+
