@@ -30,3 +30,6 @@ I have created below example file to show class and object usages in python.
 Some example code to show common mistake in python.
 - Top_10_Mistake_In_Python_Program.py
 
+# Tuple Example
+  - Tuple_And_Methods.py
+
