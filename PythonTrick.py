@@ -266,11 +266,38 @@ print(my_list)
 String1 = "Saurabh"
 # String1[2] = "K"  # It gives error
 
-# 36. Arguments passed to functions 
+#36.  Different ways to test multiple
+# flags at once in Python
+x, y, z = 0, 1, 0
+
+if x == 1 or y == 1 or z == 1:
+    print('passed')
+
+if 1 in (x, y, z):
+    print('passed')
+
+# These only test for truthiness:
+if x or y or z:
+    print('passed')
+
+if any((x, y, z)):
+    print('passed')
+
+# 37. Arguments passed to functions 
 # Python functions are Call-By-Object-Reference, meaning the mutability of the object affects the function’s behavior.
 #  Types that are immutable are passed by value and don’t make any changes to the underlying object.
 #  Mutable objects are passed by reference so the modification of the underlying object is possible.
 
+
+# 38. How to sort a Python dict by value
+# (== get a representation sorted by value)
+xs = {'a': 4, 'b': 3, 'c': 2, 'd': 1}
+print(sorted(xs.items(), key=lambda x: x[1]))
+
+# Or:
+
+import operator
+print(sorted(xs.items(), key=operator.itemgetter(1)))
 
 
 
