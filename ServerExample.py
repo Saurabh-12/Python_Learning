@@ -5,7 +5,7 @@ import sys
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 
 # Bind the socket to the port
-server_address = ('192.168.1.101', 10000)
+server_address = ('192.168.1.103', 10000)
 print('starting up on {} port {}'.format(*server_address))
 sock.bind(server_address)
 
@@ -21,14 +21,13 @@ while True:
 
         # Receive the data in small chunks and retransmit it
         while True:
-            data = connection.recv(1024)
-            print('received {!r}'.format(data.decode('unicode_escape').encode('utf-8')))
-            if data:
-                print('sending data back to the client')
-                connection.sendall(data)
-            else:
-                print('no data from', client_address)
+            data = connection.recv(5120)
+            if not data:
+                # if data is not received break
                 break
+        print("from connected user: " + str(data))
+        data = input(' -> ')
+        connection.send(data.encode())  # send data to the client
 
     finally:
         # Clean up the connection
