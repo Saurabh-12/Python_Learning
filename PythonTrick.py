@@ -299,6 +299,30 @@ print(sorted(xs.items(), key=lambda x: x[1]))
 import operator
 print(sorted(xs.items(), key=operator.itemgetter(1)))
 
+# 39. To Check if a Given Key Already Exists in a Dictionary
+     ### 39. 1. The "in" Keyword
+person = {
+  "first_name": "Saurabh",
+  "last_name": "Sharma",
+  "nickname": "Govind"
+}
+print("nickname" in person.keys()) # True
+print("age" in person.keys()) # False
+
+##### 39. 2. The .get() Method Referencing a key that does not exist in a dictionary 
+# will cause a KeyError exception, potentially breaking your code.
+print(person['last_name'])
+#print(person['age'])
+
+#### 39. 3. in keyword become repetattive to check key in dict, before getting key valus.
+#### Using direct  dict_1[key] gives error if no key and program fail/break.
+#### Hence using dict1.get() method is useful. See example below....
+middle_name = person.get("middle_name","") # empty string
+print(person.get("age")) # None
+firstName = person.get("first_name","")
+print(firstName)
+
+
 
 
 
