@@ -33,3 +33,6 @@ Some example code to show common mistake in python.
 # Tuple Example
   - Tuple_And_Methods.py
 
+# 5 common Collections example in python
+Below file contains info for each datatype and its examples
+  - Python_Collections.py file
