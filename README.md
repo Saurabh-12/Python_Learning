@@ -36,3 +36,9 @@ Some example code to show common mistake in python.
 # 5 common Collections example in python
 Below file contains info for each datatype and its examples
   - Python_Collections.py file
+# 6 String methods in python 
+some famous inbuilt strings methods in python 
+- String_Inbuilt_Method_Python.py
+# 7 Function in python
+Some famous Python function feature example
+- Python_Function.py
