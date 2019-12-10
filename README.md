@@ -30,15 +30,19 @@ I have created below example file to show class and object usages in python.
 Some example code to show common mistake in python.
 - Top_10_Mistake_In_Python_Program.py
 
-# Tuple Example
+# 6. Tuple Example
   - Tuple_And_Methods.py
 
-# 5 common Collections example in python
+# 7. Collections example in python
 Below file contains info for each datatype and its examples
   - Python_Collections.py file
-# 6 String methods in python 
+# 8. Famous String methods in python 
 some famous inbuilt strings methods in python 
 - String_Inbuilt_Method_Python.py
-# 7 Function in python
+# 9. Function in python
 Some famous Python function feature example
 - Python_Function.py
+# 10. Advance Feature Python
+I am putting 5 advance feature example in python
+- 5_Advance_Features_Python.py
+
