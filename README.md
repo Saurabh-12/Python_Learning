@@ -45,4 +45,6 @@ Some famous Python function feature example
 # 10. Advance Feature Python
 I am putting 5 advance feature example in python
 - 5_Advance_Features_Python.py
-
+# 11. PriorityQueues example
+Create and use PriorityQueues in python
+- PriorityQueues.py
