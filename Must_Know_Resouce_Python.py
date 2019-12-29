@@ -30,7 +30,7 @@ print(location.address)
 print(location.location) """
 
 # **kwargs
-# The double-asterisk in front of a dictionary object lets you pass the contents 
+# The double-asterisk in front of a dictionary object lets you pass the contents
 # of that dictionary as named arguments to a function.
 dictionary = {"a": 1, "b": 2}
 def someFunction(a, b):
@@ -48,7 +48,7 @@ zipped = dict(zip(keys, vals))
 print(zipped)
 
 # uuid
-# A quick and easy way to generate Universally Unique IDs (or ‘UUIDs’) 
+# A quick and easy way to generate Universally Unique IDs (or ‘UUIDs’)
 # is through the Python Standard Library’s uuid module.
 import uuid
 user_id = uuid.uuid4()
@@ -61,5 +61,39 @@ url = 'https://randomuser.me/api/?results=1'
 users = requests.get(url).json()
 pprint.pprint(users)
 
+#Find memory used by an object
+import sys
+print(sys.getsizeof(5)) # 28
+print(sys.getsizeof("Python")) # 55
 
+# Find the most frequent element in a list
+def most_frequent(list):
+    return max(set(list), key = list.count)
 
+numbers = [1, 2, 3, 2, 4, 3, 1, 3]
+print(most_frequent(numbers)) # 3
+
+# Calculate time taken to execute a piece of code
+import time
+start_time = time.time()
+a,b = 5,10
+c = a+b
+end_time = time.time()
+time_taken = (end_time- start_time)*(10**6)
+print("Time taken in micro_seconds:", time_taken) # Time taken in micro_seconds: 39.577484130859375
+
+# Find unique characters in a string
+string = "abcbcabdb"
+unique = set(string)
+new_string = ''.join(unique)
+print(new_string) # abcd
+
+# Use chained function call
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+a, b = 5, 10
+print((subtract if a > b else add)(a, b)) # 15
