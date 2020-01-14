@@ -48,3 +48,8 @@ I am putting 5 advance feature example in python
 # 11. PriorityQueues example
 Create and use PriorityQueues in python
 - PriorityQueues.py
+# 12. LinkedList, Queue and Stack Example
+I have added LinkedList, Queue and stack implementation example in python
+- LinkedListNode.py
+- QueueExamplePython.py
+- StackExample.py
