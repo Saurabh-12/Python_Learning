@@ -334,6 +334,12 @@ print(firstName)
 # (This will serve the current directory at
 #  http://localhost:8000)
 
+# 41. itertools.permutations() generates permutations
+# for an iterable. Time to brute-force those passwords ;-)
+import itertools
+for p in itertools.permutations('ABCD'):
+    print(p)
+
 
 
 
