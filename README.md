@@ -53,3 +53,7 @@ I have added LinkedList, Queue and stack implementation example in python
 - LinkedListNode.py
 - QueueExamplePython.py
 - StackExample.py
+# 13. Top 3 Python Functions
+- map()  file  name :- Map_Function_Python.py
+- filter() file name :- Filter_Function_Python.py
+- reduce() file name :- ReduceFunction.py
