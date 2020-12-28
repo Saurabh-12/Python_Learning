@@ -20,8 +20,8 @@ print(dir())
 print(dir("Hello World"))
 print(dir(dir))
 
-from emoji import emojize
-print(emojize(":thumbs_up:"))
+#from emoji import emojize
+#print(emojize(":thumbs_up:"))
 
 """ from geopy import GoogleV3
 place = "Manjunatha Layout,Munnekolala,Marathali, Bangalore, India"
